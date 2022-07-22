@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  frontend:
+    build: frontend
+    tty: true
+    volumes:
+      - ./frontend/public:/frontend/public:cached,ro
+      - ./frontend/pages:/frontend/pages:cached,ro
+      - ./frontend/models:/frontend/models:cached,ro
+      - ./frontend/components:/frontend/components:cached,ro
+      - ./frontend/styles:/frontend/styles:cached,ro
+      - ./frontend/api:/frontend/api:cached,ro
+      - ./frontend/apollo-client.js:/frontend/apollo-client.js:cached,ro
+    ports:
+      - "3000:3000"
+
