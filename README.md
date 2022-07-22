@@ -4,6 +4,8 @@ I-am-sad is a project built with React + NextJS + TypeScript. At the moment, the
 
 Using [this API](https://github.com/aravindasiva/demotivational-quotes-api), you'll get random sad/gloomy quotes, and then you'll mark those you like as favourites.
 
+I tried Django Framework, but I couldn't make it work. That's why backend folder is included, although it's not built with Docker or connected with React.
+
 ## Installation
 
 First of all, run the following command:
